@@ -1,0 +1,5 @@
+{
+  "python.defaultInterpreterPath": "/home/harshit/Astrostat-repo/Astronomical--techniques/.venv/bin/python",
+  "python.terminal.activateEnvironment": true,
+  "jupyter.jupyterServerType": "local"
+}

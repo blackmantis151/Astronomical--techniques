@@ -49,9 +49,9 @@ ANNULUS_R_IN = 10
 ANNULUS_R_OUT = 15
 
 # Beam pairing (initial guess, adjust later)
-DX_BEAM = 30.0
-DY_BEAM = 0.0
-PAIR_TOL = 5.0
+DX_BEAM = 31.0
+DY_BEAM = 5.0
+PAIR_TOL = 4.0
 
 # Alignment star selection
 ALIGNMENT_GROUP_ID = 1

@@ -1,0 +1,6 @@
+Crude field-average instrumental polarization estimate
+=====================================================
+Mean q = -0.022121785868620975
+Mean u = 0.02281830775624707
+P_inst = 0.031781261442490355
+theta_inst_deg = 67.05602485164998

@@ -1,0 +1,9 @@
+Beam offset from central double source
+======================================
+x_o = 205
+y_o = 216
+x_e = 236
+y_e = 221
+dx = 31
+dy = 5
+sep = 31.400636936215164

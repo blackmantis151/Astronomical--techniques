@@ -2,7 +2,6 @@ import re
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-import matplotlib.pyplot as plt
 from matplotlib.patches import Circle
 
 from astropy.io import fits
@@ -175,3 +174,57 @@ def plot_cutout_with_circle(data, x, y, radius=12, half_size=15, title="", outpa
     if outpath is not None:
         plt.savefig(outpath, dpi=150, bbox_inches="tight")
     plt.close()
+    
+def plot_detected_sources(data, sources, outpath=None, title="Detected sources", radius=6, cmap="gray"):
+    """
+    Plot detected sources on the image with circles around them.
+    """
+    norm = simple_norm(data, stretch="linear", percent=99.5)
+
+    fig, ax = plt.subplots(figsize=(8, 8))
+    ax.imshow(data, origin="lower", cmap=cmap, norm=norm)
+
+    for _, row in sources.iterrows():
+        x = row["xcentroid"]
+        y = row["ycentroid"]
+
+        circ = Circle((x, y), radius, edgecolor="red", facecolor="none", linewidth=1.5)
+        ax.add_patch(circ)
+        ax.plot(x, y, marker="+", color="yellow", markersize=8, mew=1.5)
+
+    ax.set_xlabel("X pixel")
+    ax.set_ylabel("Y pixel")
+    ax.set_title(title)
+
+    if outpath is not None:
+        plt.savefig(outpath, dpi=150, bbox_inches="tight")
+    plt.close()
+
+
+def plot_beam_pairs(data, pair_df, outpath=None, title="Beam pairs", cmap="gray"):
+    """
+    Plot beam pairs on image, drawing a line between O and E beams.
+    """
+    norm = simple_norm(data, stretch="linear", percent=99.5)
+
+    fig, ax = plt.subplots(figsize=(8, 8))
+    ax.imshow(data, origin="lower", cmap=cmap, norm=norm)
+
+    for _, row in pair_df.iterrows():
+        x_o = row["x_o"]
+        y_o = row["y_o"]
+        x_e = row["x_e"]
+        y_e = row["y_e"]
+
+        ax.plot([x_o, x_e], [y_o, y_e], color="cyan", linewidth=1.2)
+        ax.plot(x_o, y_o, marker="o", color="yellow", markersize=4)
+        ax.plot(x_e, y_e, marker="o", color="red", markersize=4)
+
+    ax.set_xlabel("X pixel")
+    ax.set_ylabel("Y pixel")
+    ax.set_title(title)
+
+    if outpath is not None:
+        plt.savefig(outpath, dpi=150, bbox_inches="tight")
+    plt.close()
+    

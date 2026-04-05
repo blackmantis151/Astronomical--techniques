@@ -1,8 +1,8 @@
 import numpy as np
 import pandas as pd
 
-from config import PHOT_DIR, POL_DIR, DX_BEAM, DY_BEAM, PAIR_TOL, OUTPUT_SUBDIRS
-from utils import ensure_directories
+from config import PHOT_DIR, POL_DIR, PLOT_DIR, STACK_DIR, DX_BEAM, DY_BEAM, PAIR_TOL, OUTPUT_SUBDIRS
+from utils import ensure_directories, load_fits_data, plot_beam_pairs
 
 
 def pair_beams():
@@ -30,16 +30,31 @@ def pair_beams():
                 "y_o": y,
                 "x_e": xy[j, 0],
                 "y_e": xy[j, 1],
+                "dx": xy[j, 0] - x,
+                "dy": xy[j, 1] - y,
+                "sep": np.sqrt((xy[j, 0] - x)**2 + (xy[j, 1] - y)**2),
             })
             used.add(i)
             used.add(j)
 
     pair_df = pd.DataFrame(pairs)
+
     out_csv = POL_DIR / "beam_pairs.csv"
     pair_df.to_csv(out_csv, index=False)
 
+    data, _ = load_fits_data(STACK_DIR / "group_1_stack.fits")
+    out_png = PLOT_DIR / "beam_pairs_overlay.png"
+
+    plot_beam_pairs(
+        data,
+        pair_df,
+        outpath=out_png,
+        title="Beam pair overlay on group 1 stack",
+    )
+
     print(f"Paired {len(pair_df)} O/E sources")
     print(f"Saved pairs: {out_csv}")
+    print(f"Saved overlay: {out_png}")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,9 @@
+PSF analysis summary
+====================
+Group used: 1
+Alignment star guess: x=102, y=133
+Cutout half-size: 12
+Estimated FWHM (pixels): 2.0
+Ellipticity: 0.13658942359900006
+Major sigma-like width: 2.3183601061853265
+Minor sigma-like width: 2.001696635586556

@@ -27,7 +27,8 @@ def measure_flux(data, x, y, r_ap, r_in, r_out):
 def run_photometry():
     ensure_directories(OUTPUT_SUBDIRS)
 
-    pairs = pd.read_csv(POL_DIR / "beam_pairs.csv")
+    #pairs = pd.read_csv(POL_DIR / "beam_pairs.csv")
+    pairs = pd.read_csv(POL_DIR / "beam_pairs_filtered.csv")  # Use filtered pairs for photometry
 
     rows = []
 

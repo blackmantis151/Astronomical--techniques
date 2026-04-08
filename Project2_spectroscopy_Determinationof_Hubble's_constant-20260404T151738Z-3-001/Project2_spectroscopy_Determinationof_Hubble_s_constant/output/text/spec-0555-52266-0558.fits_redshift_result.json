@@ -1,0 +1,40 @@
+{
+  "filename": "spec-0555-52266-0558.fits",
+  "reference_line": "Halpha",
+  "distance_mpc": 13.35,
+  "distance_err": 0.95,
+  "z_reference": 0.002859094413313146,
+  "velocity_reference_kms": 857.1349418212159,
+  "accepted_lines": [
+    {
+      "line_name": "Halpha",
+      "rest_lambda": 6562.7,
+      "obs_lambda": 6581.46337890625,
+      "z": 0.002859094413313146,
+      "velocity_kms": 857.1349418212159
+    },
+    {
+      "line_name": "Hbeta",
+      "rest_lambda": 4861.3,
+      "obs_lambda": 4874.7490234375,
+      "z": 0.0027665487498199693,
+      "velocity_kms": 829.3904498853556
+    },
+    {
+      "line_name": "OIII_5007",
+      "rest_lambda": 5006.8,
+      "obs_lambda": 5020.3095703125,
+      "z": 0.0026982444500478985,
+      "velocity_kms": 808.9133359647177
+    },
+    {
+      "line_name": "SII_6733",
+      "rest_lambda": 6732.8,
+      "obs_lambda": 6739.587890625,
+      "z": 0.0010081824241028722,
+      "velocity_kms": 302.2454870341985
+    }
+  ],
+  "velocity_mean_kms": 699.4210536763719,
+  "velocity_err_kms": 265.5200589302275
+}

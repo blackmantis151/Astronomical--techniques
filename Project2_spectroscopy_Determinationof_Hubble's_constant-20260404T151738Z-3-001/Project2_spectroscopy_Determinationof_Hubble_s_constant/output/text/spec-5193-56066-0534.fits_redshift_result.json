@@ -1,0 +1,26 @@
+{
+  "filename": "spec-5193-56066-0534.fits",
+  "reference_line": "CIV",
+  "distance_mpc": 8021.11,
+  "distance_err": 561.48,
+  "z_reference": 1.8117156339822051,
+  "velocity_reference_kms": 543138.6831085535,
+  "accepted_lines": [
+    {
+      "line_name": "CIV",
+      "rest_lambda": 1548.2,
+      "obs_lambda": 4353.09814453125,
+      "z": 1.8117156339822051,
+      "velocity_kms": 543138.6831085535
+    },
+    {
+      "line_name": "CIII",
+      "rest_lambda": 1908.7,
+      "obs_lambda": 5364.24267578125,
+      "z": 1.8104168679107508,
+      "velocity_kms": 542749.3228356253
+    }
+  ],
+  "velocity_mean_kms": 542944.0029720895,
+  "velocity_err_kms": 275.3192893122158
+}

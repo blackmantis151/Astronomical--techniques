@@ -1,0 +1,19 @@
+{
+  "filename": "spec-1617-53112-0467.fits",
+  "reference_line": "CIV",
+  "distance_mpc": 7668.09,
+  "distance_err": 536.77,
+  "z_reference": 1.7268555570581967,
+  "velocity_reference_kms": 517698.27206143603,
+  "accepted_lines": [
+    {
+      "line_name": "CIV",
+      "rest_lambda": 1548.2,
+      "obs_lambda": 4221.7177734375,
+      "z": 1.7268555570581967,
+      "velocity_kms": 517698.27206143603
+    }
+  ],
+  "velocity_mean_kms": 517698.27206143603,
+  "velocity_err_kms": 500.0
+}

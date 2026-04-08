@@ -1,0 +1,19 @@
+{
+  "filename": "spec-1603-53119-0205.fits",
+  "reference_line": "Halpha",
+  "distance_mpc": 164.54,
+  "distance_err": 11.52,
+  "z_reference": 0.03938409734179533,
+  "velocity_reference_kms": 11807.055348208087,
+  "accepted_lines": [
+    {
+      "line_name": "Halpha",
+      "rest_lambda": 6562.7,
+      "obs_lambda": 6821.166015625,
+      "z": 0.03938409734179533,
+      "velocity_kms": 11807.055348208087
+    }
+  ],
+  "velocity_mean_kms": 11807.055348208087,
+  "velocity_err_kms": 500.0
+}

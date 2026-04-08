@@ -1,0 +1,19 @@
+{
+  "filename": "spec-1818-54539-0147.fits",
+  "reference_line": "MgII",
+  "distance_mpc": 6656.11,
+  "distance_err": 465.93,
+  "z_reference": 1.5020524641974704,
+  "velocity_reference_kms": 450304.0002867166,
+  "accepted_lines": [
+    {
+      "line_name": "MgII",
+      "rest_lambda": 2802.7,
+      "obs_lambda": 7012.50244140625,
+      "z": 1.5020524641974704,
+      "velocity_kms": 450304.0002867166
+    }
+  ],
+  "velocity_mean_kms": 450304.0002867166,
+  "velocity_err_kms": 500.0
+}

@@ -1,0 +1,6 @@
+Approximate NGC 1866 MS fitting using Hyades Gaia-calibrated MS
+WARNING: Approximate because Gaia BP-RP/M_G was transformed roughly to Johnson B-V/V.
+mu = 19.494 mag
+E(B-V) approx = 0.230 mag
+Distance = 79.20 kpc
+Expected LMC distance ~49.9 kpc, mu ~18.49 mag

@@ -1,0 +1,13 @@
+Faber-Jackson Analysis
+H0 calibration used = 70.510 km/s/Mpc
+Relation: M_K = a log10(sigma) + b
+Number of galaxies = 11099
+a = -3.281134
+b = -16.939759
+Robust scatter = 0.564920 mag
+
+Formulae:
+d_Mpc = cz / H0
+M_K = Ktot - 5 log10(d_Mpc) - 25
+mu_FJ = Ktot - M_pred
+d_FJ = 10^((mu_FJ - 25)/5)

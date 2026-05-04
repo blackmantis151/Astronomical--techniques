@@ -1,0 +1,9 @@
+NGC 1866 spatial CMD analysis
+Total stars = 14827
+Core stars = 8145
+Field stars = 174
+Estimated center: X0=516.84, Y0=457.48
+No VPD selection possible because this catalogue lacks proper motions.
+Use Xpos/Ypos spatial selection instead.
+Expected LMC distance modulus = 18.49
+Assumed E(B-V) = 0.08, A_V = 0.25

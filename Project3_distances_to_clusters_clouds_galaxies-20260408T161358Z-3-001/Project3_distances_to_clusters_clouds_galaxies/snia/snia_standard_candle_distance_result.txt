@@ -1,0 +1,24 @@
+Type Ia Supernova Standard Candle Distance Calculation
+Input file: /home/harshit/Observational Astrophysics/Astronomical--techniques/Project3_distances_to_clusters_clouds_galaxies-20260408T161358Z-3-001/Project3_distances_to_clusters_clouds_galaxies/snia/PantheonPlus_Data/Pantheon+_Data/4_DISTANCES_AND_COVAR/Pantheon+SH0ES.dat
+Distance modulus column used: MU_SH0ES
+Number of usable SN Ia: 1701
+
+Distance statistics in Mpc:
+count     1701.000000
+mean      1168.643290
+std       1539.673802
+min          6.305797
+25%        114.245736
+50%        734.277127
+75%       1642.706592
+max      17240.902664
+Name: distance_mpc, dtype: float64
+
+Formula used:
+d_Mpc = 10^((mu - 25)/5)
+
+
+Hubble constant estimation:
+Using redshift column: zHD
+Number of SN used: 1590
+H0 = 64.54 ± 8.15 km/s/Mpc

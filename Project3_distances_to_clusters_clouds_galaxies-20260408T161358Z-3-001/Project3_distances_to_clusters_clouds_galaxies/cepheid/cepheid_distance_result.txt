@@ -1,0 +1,12 @@
+Cepheid ID: OGLE-LMC-CEP-0017
+Catalog line: OGLE-LMC-CEP-0017  15.237 15.899   3.6772904 0.0000061  6001.21645  0.594  0.481 4.611  0.281 2.998
+Period P = 3.6772904 days
+Catalog mean I = 15.2370
+Catalog mean V used = 15.8990
+PL relation: M_V = -2.76 log10(P) - 1.40
+M_V = -2.9609
+A_V = 0.30 mag
+Distance modulus mu = 18.5599 mag
+Distance = 51.519 kpc
+Reference LMC distance = 49.9 kpc
+Difference = 1.62 kpc

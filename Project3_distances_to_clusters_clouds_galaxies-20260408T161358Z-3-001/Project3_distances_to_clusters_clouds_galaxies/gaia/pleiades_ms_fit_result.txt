@@ -1,0 +1,4 @@
+Best-fit distance modulus mu = 5.7005
+MS-fitting distance = 138.07 pc
+Median Gaia parallax distance = 135.86 pc
+Number of selected Pleiades members = 1034

@@ -1,0 +1,18 @@
+Tully-Fisher Analysis with Inclination Filter
+Relation: M_W1 = a log10(Wmx) + b
+Number of galaxies after cuts = 4716
+a = -8.485000
+b = 0.509257
+Robust scatter = 0.444878 mag
+
+Cuts used:
+45 < Inc < 90 deg
+Wmx > 50
+e_Wmx < 30
+20 < DMbest < 40
+e_DMbest < 0.8
+
+Hubble-style check:
+H0 through origin = 70.514 km/s/Mpc
+H0 with intercept = 61.863 km/s/Mpc
+Intercept = 789.633 km/s
